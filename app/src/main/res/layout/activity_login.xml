@@ -28,7 +28,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/emailEditText"
+            android:id="@+id/emailEditTextLogin"
             android:inputType="textEmailAddress"
             android:textSize="20sp"
             android:drawableStart="@drawable/baseline_email_24"
@@ -51,7 +51,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/passwordEditText"
+            android:id="@+id/passwordEditTextLogin"
             android:inputType="textPassword"
             android:textSize="20sp"
             android:drawableStart="@drawable/baseline_lock_24"
@@ -63,7 +63,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:id="@+id/loginButton"
+        android:id="@+id/loginButtonLogin"
         android:text="Login"
         android:layout_below="@id/textInputLayout2"
         android:layout_margin="20dp"
@@ -88,7 +88,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/registerText"
+            android:id="@+id/registerTextLogin"
             android:text="  REGISTER"
             android:textSize="15sp"
             android:textStyle="bold"/>

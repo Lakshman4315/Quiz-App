@@ -53,10 +53,10 @@ public class QuizActivity extends AppCompatActivity {
         ArrayList<String> questionKey = new ArrayList(Objects.requireNonNull(questionAnswerMap.get(questions.get(currentQuestionIndex))).keySet());
 
         Log.d("size",(Integer.toString(questionKey.size())));
-//        option1.setText(questionKey.get(0));
-//        option2.setText(questionKey.get(1));
-//        option3.setText(questionKey.get(2));
-//        option4.setText(questionKey.get(3));
+        option1.setText(questionKey.get(0));
+        option2.setText(questionKey.get(1));
+        option3.setText(questionKey.get(2));
+        option4.setText(questionKey.get(3));
 
 
     }

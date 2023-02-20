@@ -22,8 +22,8 @@ public class LoginActivity extends AppCompatActivity {
     private Dao dao;
 
 
-    public Boolean succesfulLogin=true;
-    public static String sharedPrefFile = "com.example.android.firstProject";
+    public Boolean succesfulLogin=false;
+    public static String sharedPrefFile = "com.example.android.quiz_app";
     private SharedPreferences myPreferences;
     static final String LOGGED_IN = "loggedIn";
     public static String userSharedPrefFile = "USER_DATA_FILE";
@@ -60,14 +60,15 @@ public class LoginActivity extends AppCompatActivity {
                 if(Patterns.EMAIL_ADDRESS.matcher(Email).matches()){
 //                    if(dao.emailValidate(Email)){
                     if(dao.login(Email,pass)){
-                        Toast.makeText(this,"Login Successful",Toast.LENGTH_SHORT).show();
 
+                        Toast.makeText(this,"Login Successful",Toast.LENGTH_SHORT).show();
                         succesfulLogin = true;
                         updateLoginSharedCache();
                         userEmail = Email;
                         userLoginSharedCache();
-                        startActivity(new Intent(this, MainActivity.class));
+                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
                         finish();
+
                     }else{
                         Toast.makeText(this,"Email or Password is incorrect",Toast.LENGTH_SHORT).show();
 
@@ -90,10 +91,10 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     void init(){
-        emailView = findViewById(R.id.emailEditText);
-        passwordView = findViewById(R.id.passwordEditText);
-        registerTv = findViewById(R.id.registerText);
-        loginButton = findViewById(R.id.loginButton);
+        emailView = findViewById(R.id.emailEditTextLogin);
+        passwordView = findViewById(R.id.passwordEditTextLogin);
+        registerTv = findViewById(R.id.registerTextLogin);
+        loginButton = findViewById(R.id.loginButtonLogin);
     }
 
     private void updateLoginSharedCache(){

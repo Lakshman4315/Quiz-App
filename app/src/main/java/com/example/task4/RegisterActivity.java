@@ -42,11 +42,11 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     public void init(){
-        usernameView = findViewById(R.id.usernameEditText);
-        emailView = findViewById(R.id.emailEditText);
-        passwordView = findViewById(R.id.passwordEditText);
+        usernameView = findViewById(R.id.usernameEditTextRegister);
+        emailView = findViewById(R.id.emailEditTextRegister);
+        passwordView = findViewById(R.id.passwordEditTextRegister);
         registerButton = findViewById(R.id.Register);
-        loginTv = findViewById(R.id.loginText);
+        loginTv = findViewById(R.id.loginTextRegister);
     }
 
     public void RegisterListener(View view) {

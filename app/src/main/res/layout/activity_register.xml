@@ -29,7 +29,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/usernameEditText"
+            android:id="@+id/usernameEditTextRegister"
             android:inputType="text"
             android:textSize="20sp"
             android:drawableStart="@drawable/baseline_person_24"
@@ -53,7 +53,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/emailEditText"
+            android:id="@+id/emailEditTextRegister"
             android:inputType="textEmailAddress"
             android:textSize="20sp"
             android:drawableStart="@drawable/baseline_email_24"
@@ -76,7 +76,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/passwordEditText"
+            android:id="@+id/passwordEditTextRegister"
             android:inputType="textPassword"
             android:textSize="20sp"
             android:drawableStart="@drawable/baseline_lock_24"
@@ -114,7 +114,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/loginText"
+            android:id="@+id/loginTextRegister"
             android:text="  LOGIN"
             android:textSize="20sp"
             android:textStyle="bold"/>

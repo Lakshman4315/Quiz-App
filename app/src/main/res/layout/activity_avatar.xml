@@ -22,86 +22,21 @@
             android:src="@drawable/images" />
     </com.google.android.material.card.MaterialCardView>
 
-    <GridLayout
-        android:id="@+id/gridLayoutAvatar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:columnCount="3"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAvatar"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
         android:padding="10dp"
+        android:layout_margin="20dp"
         android:layout_below="@id/materialCardView"
         android:layout_centerHorizontal="true"
-        >
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="10dp"
-            android:src="@drawable/science_img" />
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="10dp"
-            android:src="@drawable/science_img" />
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="10dp"
-            android:src="@drawable/science_img" />
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="10dp"
-            android:src="@drawable/science_img" />
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="10dp"
-            android:src="@drawable/science_img" />
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="10dp"
-            android:src="@drawable/science_img" />
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="10dp"
-            android:src="@drawable/science_img" />
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="10dp"
-            android:src="@drawable/science_img" />
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="10dp"
-            android:src="@drawable/science_img" />
-
-    </GridLayout>
+        />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/next"
-        android:layout_below="@id/gridLayoutAvatar"
+        android:layout_below="@id/recyclerViewAvatar"
         android:layout_margin="30dp"
         android:text="Next"
         android:textStyle="bold"
