@@ -1,0 +1,2 @@
+package com.example.task4;public class HistoryRecyclerViewAdapter {
+}
